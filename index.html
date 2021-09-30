@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>powerhtmlpoint</title>
+</head>
+<body>
+    <h1>Yo, PowerHTMLPoint</h1>
+    <div class="toolbar" style="background:gray;">
+        Toolbar
+        <span>AddShape</span>
+        <button>LoadImage</button>
+
+        <span>AddShape</span>
+        <button>TextBox</button>
+        <button>RectBox</button>
+        <button>Circle</button>
+        <button>Line</button>
+        <button>Arrow</button>
+        
+        <span>ArrangeShape</span>
+        <button>BackColor</button>
+        <button>FrameColor</button>
+        
+        <span>ArrangeText</span>
+        <button>FontName</button>
+        <button>FontSize</button>
+        <button>FontSizeSmaller</button>
+        <button>FontSizeLarger</button>
+        <button>TextUnderline</button>
+        <button>TextBold</button>
+        <button>TextItalic</button>
+        <button>TextColor</button>
+        
+    </div>
+
+    <style>
+        .main{
+            min-width: 100px;
+            min-height: 600px;
+            border: 15px solid black;
+            background-color: ivory;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .stage{
+            position: relative;
+        }
+
+        .stage .item{
+            position: absolute;
+            top: 0px;
+            left: 120px;
+        }
+
+        .selectorRect{
+            border: 30px black solid;
+        }
+
+        .strong{
+            background-color: red;
+        }
+    </style>
+
+    <div class="stage main">
+        Stage
+
+        <div class="item" contenteditable="true" draggable="false">Test Text Box</div>
+    </div>
+
+
+
+    <div class="code main">
+        Code<br>
+
+        <textarea style="width: 100%;height: 500px;"></textarea>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
